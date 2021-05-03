@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@300;400&display=swap');
+
+*{
+   
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Antonio', sans-serif;
+    display:flex;
+    /* height: 100vh; */
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    background-color:silver;
+    margin:0;
+    /* overflow: hidden;  */
+}
+#maincont{
+    display: flex;
+    flex-direction: column;
+}
+
+.content{
+    width:350px;
+    height:200px;
+    background-color: indigo;
+    margin:10px;
+    text-align: center;
+    padding-top:90px;
+    font-size: 1.5em;
+    border-radius: 20px;
+    box-shadow: 4px 4px 2px grey ;
+    color:white;
+    /* font-weight: bolder; */
+    transform: translateX(300%);
+    transition: transform 0.5s ease;
+}
+.content:nth-of-type(even){
+    transform: translateX(-300%);
+}
+.content.show{
+    transform: translateX(0);
+}
